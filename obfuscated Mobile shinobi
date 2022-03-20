@@ -1,1 +1,233 @@
+--Shinobi Storm Mobile
+-- hey skids I tried, to scare yall off with the obfuscated title but i guess your still here I mean I gave yall this unobfuscated because I want yall to have this plis no steal
+-- hey shinobi Storm developers! uh welcome I'm chris I know your here to check the code on how I made the script blah blah go ahead and patch it :/
 
+
+local ShinobiMobile = Instance.new("ScreenGui")
+local Pages = Instance.new("Frame")
+local ClearTab = Instance.new("TextButton")
+local _3rdP = Instance.new("TextButton")
+local _4thP = Instance.new("TextButton")
+local _5thP = Instance.new("TextButton")
+local X = Instance.new("TextButton")
+local HitBox = Instance.new("TextButton")
+local HitBox2 = Instance.new("TextButton")
+
+
+
+ShinobiMobile.Name = "Shinobi Mobile"
+ShinobiMobile.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ShinobiMobile.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Pages.Name = "Pages"
+Pages.Parent = ShinobiMobile
+Pages.BackgroundColor3 = Color3.fromRGB(170, 255, 0)
+Pages.Position = UDim2.new(0.696696699, 0, 0.25612542, 0)
+Pages.Size = UDim2.new(0, 193, 0, 203)
+Pages.Draggable = true
+
+ClearTab.Name = "ClearTab"
+ClearTab.Parent = Pages
+ClearTab.BackgroundColor3 = Color3.fromRGB(65, 255, 7)
+ClearTab.Size = UDim2.new(0, 193, 0, 39)
+ClearTab.Font = Enum.Font.SourceSans
+ClearTab.Text = "Clear Tabs"
+ClearTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClearTab.TextSize = 20.000
+ClearTab.TextWrapped = true
+
+_3rdP.Name = "3rdP"
+_3rdP.Parent = Pages
+_3rdP.BackgroundColor3 = Color3.fromRGB(227, 255, 43)
+_3rdP.Position = UDim2.new(0, 0, 0.214285716, 0)
+_3rdP.Size = UDim2.new(0, 193, 0, 32)
+_3rdP.Font = Enum.Font.SourceSans
+_3rdP.Text = "3rd Page"
+_3rdP.TextColor3 = Color3.fromRGB(0, 0, 0)
+_3rdP.TextSize = 20.000
+
+_4thP.Name = "4thP"
+_4thP.Parent = Pages
+_4thP.BackgroundColor3 = Color3.fromRGB(133, 255, 80)
+_4thP.Position = UDim2.new(0, 0, 0.390109897, 0)
+_4thP.Size = UDim2.new(0, 193, 0, 27)
+_4thP.Font = Enum.Font.SourceSans
+_4thP.Text = "4th Page"
+_4thP.TextColor3 = Color3.fromRGB(0, 0, 0)
+_4thP.TextSize = 20.000
+_4thP.TextWrapped = true
+
+_5thP.Name = "5thP"
+_5thP.Parent = Pages
+_5thP.BackgroundColor3 = Color3.fromRGB(143, 179, 255)
+_5thP.Position = UDim2.new(0, 0, 0.538461566, 0)
+_5thP.Size = UDim2.new(0, 193, 0, 23)
+_5thP.Font = Enum.Font.SourceSans
+_5thP.Text = "5th Page"
+_5thP.TextColor3 = Color3.fromRGB(0, 0, 0)
+_5thP.TextSize = 20.000
+
+X.Name = "X"
+X.Parent = Pages
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+X.Position = UDim2.new(-0.207253888, 0, 0, 0)
+X.Size = UDim2.new(0, 40, 0, 39)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextSize = 20.000
+
+HitBox.Name = "HitBox"
+HitBox.Parent = Pages
+HitBox.BackgroundColor3 = Color3.fromRGB(143, 179, 255)
+HitBox.Position = UDim2.new(0, 0, 0.664835155, 0)
+HitBox.Size = UDim2.new(0, 193, 0, 28)
+HitBox.Font = Enum.Font.SourceSans
+HitBox.Text = "Hitbox Expand"
+HitBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+HitBox.TextSize = 20.000
+
+HitBox2.Name = "HitBox2"
+HitBox2.Parent = Pages
+HitBox2.BackgroundColor3 = Color3.fromRGB(143, 179, 255)
+HitBox2.Position = UDim2.new(0, 0, 0.833104372, 0)
+HitBox2.Size = UDim2.new(0, 193, 0, 28)
+HitBox2.Font = Enum.Font.SourceSans
+HitBox2.Text = "Hitbox Off"
+HitBox2.TextColor3 = Color3.fromRGB(0, 0, 0)
+HitBox2.TextSize = 20.000
+
+
+local function CWGZ_fake_script()
+	local script = Instance.new('LocalScript', ClearTab)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = true
+		wait(0.6)
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden2.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.Main.Visible = true
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded2.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden3.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded3.Visible = false
+		wait(0.6)
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = false
+	end)
+end
+coroutine.wrap(CWGZ_fake_script)()
+local function EUKMYP_fake_script()
+	local script = Instance.new('LocalScript', _3rdP)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.Main.Visible = false
+		wait(0.7)
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden2.Visible = false
+		wait(0.4)
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = true
+		wait(0.7)
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden.Visible = true
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden3.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded3.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded.Visible = true
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded2.Visible = false
+		wait(0.6)
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = false
+	end)
+end
+coroutine.wrap(EUKMYP_fake_script)()
+local function UGYTO_fake_script()
+	local script = Instance.new('LocalScript', _4thP)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.Main.Visible = false
+		wait()
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden.Visible = false
+		wait(0.4)
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = true
+		wait(0.5)
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden2.Visible = true
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden3.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded3.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded2.Visible = true
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded.Visible = false
+		wait(0.7)
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = false
+	end)
+end
+coroutine.wrap(UGYTO_fake_script)()
+local function WIHZI_fake_script()
+	local script = Instance.new('LocalScript', _5thP)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.Main.Visible = false
+		wait()
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden.Visible = false
+		wait(0.4)
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = true
+		wait(0.5)
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden2.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded2.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded.Visible = false
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippuden3.Visible = true
+		game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelect.MainShippudenNotAdded3.Visible = true
+		wait(0.7)
+		game:GetService("Players").LocalPlayer.PlayerGui.KakashiPopup.Enabled = false
+	end)
+end
+coroutine.wrap(WIHZI_fake_script)()
+local function IUCLEP_fake_script()
+	local script = Instance.new('LocalScript', X)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.UIGradient.Visible = true
+	end)
+end
+coroutine.wrap(IUCLEP_fake_script)()
+local function OSVSJS_fake_script()
+	local script = Instance.new('LocalScript', HitBox)
+
+	script.Parent.MouseButton1Down:connect(function()
+	    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Enjoy By chris", Text = "Mobile Hitbox"})
+	local player = game.Players.LocalPlayer
+		
+		
+		
+	_G.HeadSize = 40
+	
+	for i,v in next, game:GetService('Players'):GetPlayers() do
+	if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+	pcall(function()
+	v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+	v.Character.HumanoidRootPart.Transparency = 0.1
+	v.Character.HumanoidRootPart.BrickColor = BrickColor.new("White")
+	v.Character.HumanoidRootPart.Material = "Glass"
+	v.Character.HumanoidRootPart.CanCollide = false
+	end)
+	end
+		end
+		end)
+end
+coroutine.wrap(OSVSJS_fake_script)()
+local function LJILI_fake_script()
+	local script = Instance.new('LocalScript', HitBox2)
+
+	script.Parent.MouseButton1Down:connect(function()
+	    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "ngl chris is pro", Text = ""})
+		
+	
+	for i,v in next, game:GetService('Players'):GetPlayers() do
+	if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+	pcall(function()
+	v.Character.HumanoidRootPart.Size = Vector3.new(2, 2, 1)
+	v.Character.HumanoidRootPart.Transparency = 0.35
+	v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Medium stone grey")
+	v.Character.HumanoidRootPart.Material = "Glass"
+	v.Character.HumanoidRootPart.CanCollide = false
+	end)
+			end
+		end
+		end)
+end
+coroutine.wrap(LJILI_fake_script)()
